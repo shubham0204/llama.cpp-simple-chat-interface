@@ -3,7 +3,7 @@
 #include <iostream>
 
 int main(int argc, char* argv[]) {
-    std::string modelPath = "/home/shubham/CPP_Projects/llama-cpp-inference/models/smollm2-360m-instruct-q8_0.gguf";
+    std::string modelPath = "../models/smollm2-360m-instruct-q8_0.gguf";
     float temperature = 1.0f;
     float minP = 0.05f;
     std::unique_ptr<LLMInference> llmInference = std::make_unique<LLMInference>();
