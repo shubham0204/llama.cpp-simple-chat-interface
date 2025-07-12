@@ -16,14 +16,3 @@ target_link_libraries(
         PRIVATE
         common llama ggml
 )
-
-add_executable(
-        chat-vision
-        src/vlm/VLMInference.cpp
-        src/vlm/main.cpp
-)
-target_link_libraries(
-        chat-vision
-        PRIVATE
-        common llama ggml
-)
